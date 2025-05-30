@@ -5,11 +5,10 @@
   "type": "module",
   "hompe-page": "https://Mzr96.github.io/ielts-exam",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "deploy": "gh-pages -d build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "dev": "vite"
   },
   "dependencies": {
     "firebase": "^11.8.1",
